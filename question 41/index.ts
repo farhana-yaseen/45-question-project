@@ -6,7 +6,9 @@ let magicianName = ["Harry Houdini", "David Copperfield", "David Blaine", "Uri G
 
 
 function show_magicians() {
+
   for (let m of magicianName){
+    
   console.log(m); 
 
   }

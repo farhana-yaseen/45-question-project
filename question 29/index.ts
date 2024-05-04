@@ -5,11 +5,13 @@ let favorite_fruits = ["mango", "orange", "apple"];
 
 
 // Write five if statements. Each should check whether a certain kind of fruit is in your array. 
-//If the fruit is in your array, the if block should print a statement,
-// such as You really like bananas!
+//If the fruit is in your array, the if block should print a statement, such as You really like bananas!
+
+
+// The includes() method returns true if a string contains a specified string.
 
 if (favorite_fruits.includes("graps")){
-    console.log("I realy like orange....");
+    console.log("I realy like graps....");
 }
 
 if (favorite_fruits.includes("apple")){

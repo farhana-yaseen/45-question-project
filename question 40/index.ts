@@ -6,35 +6,28 @@
 // If the calling line includes a value for the number of tracks, add that value to the album’s Object. 
 // Make at least one new function call that includes the number of tracks on an album.
 
-interface objType {
-  artistName:string,
-  albumTitle:string,
-  tracks:number,
-}
+
+// optional parameters indicated by the ? symbol after their names. 
+// This allows you to call the function with fewer arguments without causing an error.
+
+type Album = {artistName:string, albumTitle:string, tracks?:number}
 
 
-
-function make_album(artistName:string,albumTitle:string,tracks:number){
-  let object:objType = {
-    artistName,
-    albumTitle,
-    tracks:0 }
+function make_album(artistName:string, albumTitle:string, tracks?:number){
   
+  let album:Album = {artistName, albumTitle};   
 
-  if (tracks !== undefined){
-      object.tracks = tracks;
+  if (tracks){
+    
+    album['tracks'] = tracks;
       
   }
-  return object;
+  return album;
 }
 
 
-let album1:objType = make_album( "Atif Aslam",  "meri kahani",0);
+console.log(make_album( "Atif Aslam",  "meri kahani"));
 
-let album2:objType= make_album("Ahmed Jahanzaib", "parastish",12);
+console.log(make_album("Ahmed Jahanzaib", "parastish", 12));
 
-let album3:objType= make_album("Sajjad Ali", "Teri yaad", 10);
-
-console.log(album1);
-console.log(album2);
-console.log(album3);
+console.log(make_album("Sajjad Ali", "Teri yaad"));

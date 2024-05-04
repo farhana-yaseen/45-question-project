@@ -16,7 +16,8 @@ console.log(fname.toUpperCase());
 
 // convert person's name into titlecase
 
-let titleCase = fname.charAt(0).toUpperCase()+ fname.slice(1);
+// charAt() Return the first character (0) of a string
+// slice() extracts a part of a string and returns the extracted part
+
+let titleCase = fname.charAt(0).toUpperCase()+ fname.slice(1).toLocaleLowerCase();
 console.log(titleCase);
-
-

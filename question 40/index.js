@@ -5,21 +5,15 @@
 // Add an optional parameter to make_album() that allows you to store the number of tracks on an album. 
 // If the calling line includes a value for the number of tracks, add that value to the album’s Object. 
 // Make at least one new function call that includes the number of tracks on an album.
+
 function make_album(artistName, albumTitle, tracks) {
-    let object = {
-        artistName,
-        albumTitle,
-        tracks: 0
-    };
-    if (tracks !== undefined) {
-        object.tracks = tracks;
+    let album = { artistName, albumTitle };
+    if (tracks) {
+        album['tracks'] = tracks;
     }
-    return object;
+    return album;
 }
-let album1 = make_album("Atif Aslam", "meri kahani", 0);
-let album2 = make_album("Ahmed Jahanzaib", "parastish", 12);
-let album3 = make_album("Sajjad Ali", "Teri yaad", 10);
-console.log(album1);
-console.log(album2);
-console.log(album3);
+console.log(make_album("Atif Aslam", "meri kahani"));
+console.log(make_album("Ahmed Jahanzaib", "parastish", 12));
+console.log(make_album("Sajjad Ali", "Teri yaad"));
 export {};

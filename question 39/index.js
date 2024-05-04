@@ -4,10 +4,7 @@ function city_country(city, country) {
     return `\n ${city}, ${country}`;
 }
 // Call your function with at least three city-country pairs, and print the value that’s returned.
-let city1 = city_country("Karachi", "Pakistan");
-let city2 = city_country("Islamabad", "Pakistan");
-let city3 = city_country("Lahore", "Pakistan");
-console.log(city1);
-console.log(city2);
-console.log(city3);
+console.log(city_country("Karachi", "Pakistan"));
+console.log(city_country("Islamabad", "Pakistan"));
+console.log(city_country("Lahore", "Pakistan"));
 export {};

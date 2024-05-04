@@ -4,7 +4,7 @@
 
 
 
-function describe_city(city:string,country="Pakistan") {
+function describe_city(city:string, country = "Pakistan") {
 
   console.log(`\n ${city} is in ${country}`);
 
@@ -13,8 +13,10 @@ function describe_city(city:string,country="Pakistan") {
 // Call your function for three different cities.
 
 describe_city("Karachi");
+
 describe_city("Islamabad");
 
 //one of which is not in the default country.
+
 describe_city("Ankara", "Turkey");
 

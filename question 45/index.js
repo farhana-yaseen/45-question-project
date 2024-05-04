@@ -1,12 +1,12 @@
 // Write a function that stores information about a car in a Object.
 // The function should always receive a manufacturer and a model name. It should then accept an arbitrary number of keyword arguments. 
-function createCar(manufacturer, modelName, ...option) {
+function createCar(manufacturer, modelName, ...options) {
     let car = {
         manufacturer,
-        modelName
+        modelName,
     };
-    option.forEach(([keyword, value]) => {
-        car[keyword] = value;
+    options.forEach(([keyword, value]) => {
+        car[keyword] = value; // Using square bracket notation to dynamically assign properties
     });
     return car;
 }

@@ -3,14 +3,17 @@
 //favorite mode of transportation
 
 let names = ["HOnda Bike", "Sports Bike",  "BMW Car", "Mercedes Car"];
+
 let message = "I would like to own a";
 
 
 
-//for of loop to print 
+//print message with names by for of loop
 
 for (let i of names){
-console.log(`${message} ${i}`);
+
+console.log(`${message} ${i}.`);
+
 }
 
 

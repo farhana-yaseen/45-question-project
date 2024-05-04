@@ -2,12 +2,6 @@
 //Print each person’s name by accessing each element in the list, one at a time.
 let names = ["Aliza", "Areesha", "Kashaf", "Sana", "Rabia", "Farheen"];
 names.forEach((name) => {
-    console.log("Friend Name: ", name);
+    console.log(`My Friend Name is ${name}`);
 });
 export {};
-// console.log(names[0]);
-// console.log(names[1]);
-// console.log(names[2]);
-// console.log(names[3]);
-// console.log(names[4]);
-// console.log(names[5]);

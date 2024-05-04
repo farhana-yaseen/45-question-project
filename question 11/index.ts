@@ -7,7 +7,7 @@ let names = ["Aliza","Areesha","Kashaf","Sana","Rabia","Farheen"];
 
 
 names.forEach((name)=>{
-    console.log("Friend Name: ", name);
-})
 
+    console.log(`My Friend Name is ${name}`);
+})
 

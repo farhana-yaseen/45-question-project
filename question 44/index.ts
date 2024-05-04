@@ -15,6 +15,6 @@ console.log(items);
 }
 
 
- sandwichItems("Tomato","ketchup","Chicken", "Mayonnaise");
+sandwichItems("Tomato","ketchup","Chicken", "Mayonnaise");
 sandwichItems("Peanut Butter", "Jelly");
 sandwichItems("Swiss Cheese", "Tomato", "Mayonnaise");
