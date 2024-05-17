@@ -10,7 +10,8 @@
 // optional parameters indicated by the ? symbol after their names. 
 // This allows you to call the function with fewer arguments without causing an error.
 
-type Album = {artistName:string, albumTitle:string, tracks?:number}
+// interface is a way to define the shape or structure that an object should have.
+interface Album {artistName:string, albumTitle:string, tracks?:number}
 
 
 function make_album(artistName:string, albumTitle:string, tracks?:number){

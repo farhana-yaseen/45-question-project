@@ -5,7 +5,6 @@
 // Add an optional parameter to make_album() that allows you to store the number of tracks on an album. 
 // If the calling line includes a value for the number of tracks, add that value to the album’s Object. 
 // Make at least one new function call that includes the number of tracks on an album.
-
 function make_album(artistName, albumTitle, tracks) {
     let album = { artistName, albumTitle };
     if (tracks) {
